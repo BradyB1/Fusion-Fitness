@@ -13,14 +13,22 @@ body{
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  position: relative;
+  margin-top: 1.75rem;
 }
 
 /* "Fusion Fitness" Heading -- The one Above Nav bar */
 /* need to get this centered  */
-h1{ 
-  font-size: 3.5rem  !important;
+h1 { 
+  font-size: 3.5rem !important;
   color: rgb(249, 127, 13) !important;
   font-family: "Montserrat" !important;
+  font-weight:bold !important;
+  position: absolute; /* Keep position absolute */
+  top: 0%; /* Move to the center vertically */
+  left: 50%; /* Move to the center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center */
+  margin: 0; /* Add this to remove default margin */
 }
 
 /* remove the underline from the h1 a tag  */
