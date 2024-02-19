@@ -41,7 +41,9 @@ h1 {
   display:flex;
 }
 
-
+.log-in{
+  background-color: yellow !important;
+}
 
 /* "Ignite Your Workout" h2 */
 .ignite{
@@ -67,14 +69,7 @@ h1 {
   color: #a6a6a6;
 }
 
-/* buttons on the three grid items */
-.grid-buttons{
-  background-color:#ff5757 ;
-  height: 3rem;
-  border:none;
-  border-radius: 10px !important;
-  padding: 0 1rem !important;
-}
+
 
 
 /* for the bootstrap footer to stay locked at the bottom of the screen 
@@ -95,11 +90,140 @@ footer {
   justify-content: center;
 }
 
-.get-started{
-  background-color: #198754 !important;
-  width: 20rem !important;
-  height: 3rem !important;
-  border:none !important;
-  color: black !important;
-  font-size: 1.25rem !important;
+
+
+/* buttons on the three grid items */
+.button-77 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
 }
+
+@media (min-width: 768px) {
+  .button-77 {
+    padding: 19px 32px;
+  }
+}
+
+.button-77:before,
+.button-77:after {
+  border-radius: 80px;
+}
+
+.button-77:before {
+  background-color: rgba(249, 58, 19, .32);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-77:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-77:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+}
+
+.button-77:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-77:active:not(:disabled):after {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-77:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+/* end grid buttons */
+
+
+/* start your Journey Button styling  */
+.btn {
+  background-color: #00BFA6 !important;
+  padding: 14px 40px !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  cursor: pointer !important;
+  border-radius: 10px !important;
+  border: 2px dashed #00BFA6 !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+  transition: .4s !important;
+ }
+ 
+ .btn span:last-child {
+  display: none !important;
+ }
+ 
+ .btn:hover {
+  transition: .4s !important;
+  border: 2px dashed #00BFA6; !important
+  background-color: #fff !important;
+  color: #00BFA6 !important;
+ }
+ 
+ .btn:active {
+  background-color: #87dbd0 !important;
+ }
+ 
+ 
