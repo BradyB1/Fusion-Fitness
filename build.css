@@ -1,0 +1,41 @@
+/* headings:  font-family: "Montserrat" !important;*/
+/* body text:  font-family: "Open Sans", sans-serif !important;*/
+
+
+body{
+  font-size: 20px !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+
+h1{
+  display: flex !important;
+  justify-content: center !important;
+  font-size: 3.5rem  !important;
+  color: rgb(249, 127, 13) !important;
+  font-family: "Montserrat" !important;
+  margin-bottom: 0;
+}
+
+h2{
+  display:flex; 
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.grid-flex-container{ 
+  margin-top:10rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+
+}
+
+.grid-container {
+  display:grid !important;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  margin-left: auto; 
+  margin-right: auto;
+}
