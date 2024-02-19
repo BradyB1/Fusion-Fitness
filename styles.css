@@ -1,21 +1,50 @@
+/* styles applied to the whole body */
 body{
   font-size: 20px !important;
   font-family: "Open Sans", sans-serif !important;
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
 }
-/* open sans for body text */
 
+/* container holding h1 and login-buttons */
+.page-header{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
 
-
+/* "Fusion Fitness" Heading -- The one Above Nav bar */
+/* need to get this centered  */
 h1{ 
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
   font-size: 3.5rem  !important;
   color: rgb(249, 127, 13) !important;
   font-family: "Montserrat" !important;
 }
 
+/* remove the underline from the h1 a tag  */
+#title-redirect{
+  text-decoration: none;
+}
 
+/* login/signup button container */
+.login-buttons{
+  display:flex;
+}
+
+
+
+/* "Ignite Your Workout" h2 */
+.ignite{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Montserrat" !important;
+}
+
+/* For the three main content sections on the page */
 .grid-container {
   display:grid !important;
   grid-template-columns: repeat(3,1fr);
@@ -26,17 +55,24 @@ h1{
   text-align: center;
 }
 
-button{
+/* buttons on the three grid items */
+.grid-buttons{
   background-color:#ff5757 ;
   height: 3rem;
   border:none;
   border-radius: 10px !important;
 }
 
-.ignite{
-  display: flex;
-  justify-content: center;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: "Montserrat" !important;
+
+/* for the bootstrap footer to stay locked at the bottom of the screen 
+    -- Will probably reuse this on each page */
+footer {
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0; 
+  right: 0; 
 }
+*/
