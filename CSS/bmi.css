@@ -1,0 +1,151 @@
+body{
+  font-size: 20px !important;
+  font-family: "Open Sans", sans-serif !important;
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr auto auto; /* One column for title, one for buttons */
+  align-items: center; /* Center vertically */
+  padding-top: 1rem;
+}
+.my-3 {
+  margin-top: 1rem; /* Adjust as needed */
+  margin-bottom: 1rem; /* Adjust as needed */
+}
+h1 { 
+  padding-top: 2rem;
+  font-size: 3.5rem !important;
+  color: rgb(249, 127, 13) !important;
+  font-family: "Montserrat" !important;
+  font-weight:bold !important;
+  position: absolute; /* Keep position absolute */
+  top: 0%; /* Move to the center vertically */
+  left: 50%; /* Move to the center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center */
+  margin: 0; /* Add this to remove default margin */
+}
+
+/* remove the underline from the h1 a tag  */
+#title-redirect{
+  text-decoration: none;
+}
+
+
+.login-buttons {
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+}
+.login-buttons button{
+  margin-left: 5px;
+}
+
+
+
+.button-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 2.75rem;
+}
+
+.button-10:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+
+
+.sign-up-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  color: #fff;
+  background-color: #00BFA6 !important;
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 2.75rem;
+}
+
+.sign-up-btn:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px #00BFA6 !important;
+  outline: 0;
+}
+
+.measurement-selection{
+  display: flex;
+  justify-content: center;
+}
+.measurement-selection label{
+  margin: 2rem;
+}
+.measurement-selection input:hover{ 
+  cursor: pointer;
+}
+.body-inputs{
+  display:flex;
+  justify-content: center;
+}
+
+
+.body-inputs input{
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  height: 1.5rem;
+  width: 13rem;
+  background-color: #d9d9d9;
+  border: none;
+}
+
+#imperial-height-in{
+  margin: 1rem;
+  
+}
+
+.bmi-output{
+  margin-top:6rem;
+  display:flex;
+  justify-content: center;
+
+}
+
+.bmi-output input{
+  text-align:center;
+  padding: .5rem;
+  border-radius:1rem;
+  height: 2rem;
+  width: 10rem;
+  background-color: #d9d9d9;
+}
+
+#submit{
+  height:2.5rem;
+  width: 10%;
+}
