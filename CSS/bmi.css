@@ -129,6 +129,7 @@ h1 {
   
 }
 
+
 .bmi-output{
   margin-top:6rem;
   display:flex;
@@ -146,8 +147,13 @@ h1 {
 }
 
 #submit{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height:2.5rem;
-  width: 10%;
+  width: 150px;
+  margin: 1rem auto;
 }
 
 .bmi-interpretation{
