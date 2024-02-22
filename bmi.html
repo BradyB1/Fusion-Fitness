@@ -30,38 +30,48 @@
       </ul>
     </header>
   </div>
-
-<div class="measurement-container">
-  <form class = "measurement-selection ">
-    <input type="radio" id= "imperial" name = "measurment" value = "imperial" checked>
-    <label for="imperial">Imperial</label>
-    <input type="radio" id = "metric" name="measurment" value="metric">
-    <label for="metric">Metric</label>
+  <div class="measurement-container">
+    <form class="measurement-selection">
+      <input type="radio" id="imperial" name="measurement" value="imperial" checked>
+      <label for="imperial">Imperial</label>
+      <input type="radio" id="metric" name="measurement" value="metric">
+      <label for="metric">Metric</label>
+    </form>
+  </div>
     
-  </form>
-</div>
+  <!-- Imperial Form (Default form) -->
+  <div class="body-inputs imperial-form">
+    <form action="">
+      <label for="imperial-height-ft">Height:</label>
+      <input type="number" id="imperial-height-ft" name="imperial-inputs" placeholder="ft">
+      <input type="number" id="imperial-height-in" name="imperial-inputs" placeholder="inches">
+      <label for="imperial-weight-ibs" id="imperial-weight-ibs-label">Weight:</label>
+      <input type="text" id="imperial-weight-ibs" name="imperial-inputs" placeholder="Ibs">
+      <br>
+      <input type="submit" id="submit">
+    </form>
+  </div>
   
-<!-- Imperial Form (Default form) -->
-<div class="body-inputs">
-  <form action="">
-    <label for="imperial-height-ft">Height:</label>
-    <input type="number" id= "imperial-height-ft" name = "imperial-inputs" placeholder="ft">
-    <input type="number" id = "imperial-height-in" name="imperial-inputs" placeholder = "inches">
-    <label for="imperial-weight-ibs" id ="imperial-weight-ibs-label">Weight:</label>
-    <input type="text" id="imperial-weight-ibs" name = "imperial-inputs" placeholder = "Ibs">
-    <br>
-    <input type="submit" id ="submit">
-  </form>
-</div>
-
-<div class="bmi-output">
-  <label for="bmi-result">Your BMI: &nbsp;</label>
-  <input type="text" placeholder="25.5" id ="bmi-results">
-</div>
-
-<div class="bmi-interpretation">
-  <p id = "bmi-interpretation"></p>
-</div>
+  <!-- Metric Form -->
+  <div class="body-inputs metric-form" style="display: none;">
+    <form action="">
+      <label for="metric-height-cm">Height (cm):</label>
+      <input type="number" id="metric-height-cm" name="metric-inputs" placeholder="cm">
+      <label for="metric-weight-kg">Weight (kg):</label>
+      <input type="text" id="metric-weight-kg" name="metric-inputs" placeholder="kg">
+      <br>
+      <input type="submit" id="submit">
+    </form>
+  </div>
+  
+  <div class="bmi-output">
+    <label for="bmi-result">Your BMI: &nbsp;</label>
+    <input type="text" placeholder="25.5" id="bmi-results">
+  </div>
+  
+  <div class="bmi-interpretation">
+    <p id="bmi-interpretation"></p>
+  </div>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
