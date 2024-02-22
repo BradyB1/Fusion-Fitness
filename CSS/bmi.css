@@ -149,3 +149,10 @@ h1 {
   height:2.5rem;
   width: 10%;
 }
+
+.bmi-interpretation{
+  margin-top: 2rem;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
